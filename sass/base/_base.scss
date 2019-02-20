@@ -1,0 +1,15 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    // defines the size of the REM, 62.5% of default 16px
+    // 1rem = 10px
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+}
