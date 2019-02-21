@@ -4,7 +4,7 @@
                         to right bottom,
                         rgba($color-primary-light, 1),
                         rgba($color-primary-dark, 0.1)), 
-                    url(../img/hero.jpg);
+                    url(../img/hero111.jpg);
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -13,7 +13,7 @@
 
     &__logo-box {
         position: absolute;
-        top: 4rem;
+        top: 4.5rem;
         left: 4rem;
     }
     
@@ -27,6 +27,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        text-shadow: 0 2px 5px rgba($color-black,.5);
     }
-    
 }
