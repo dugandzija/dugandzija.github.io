@@ -264,7 +264,7 @@ body {
   content: 'Učitaj više'; }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Smanji'; }
+  content: 'Smanji '; }
 
 .read-more-trigger {
   cursor: pointer;
@@ -318,7 +318,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: block;
-    background-image: linear-gradient(to right, #00bbff, #0080ff);
+    background-image: linear-gradient(to right bottom, rgba(23, 5, 255, 0.8), rgba(72, 2, 107, 0.5));
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -453,7 +453,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #00bbff, rgba(0, 128, 255, 0.1)), url(../img/hero111.jpg);
+  background-image: linear-gradient(to right bottom, rgba(23, 5, 255, 0.8), rgba(72, 2, 107, 0.5)), url(../img/hero111.jpg);
   background-size: cover;
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -507,7 +507,7 @@ body {
 
 .section-features {
   padding: 15rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 187, 255, 0.6), rgba(0, 128, 255, 0.6)), url(../img/hero-features.jpg);
+  background-image: linear-gradient(to right bottom, rgba(23, 5, 255, 0.8), rgba(72, 2, 107, 0.5)), url(../img/hero-features.jpg);
   background-size: cover;
   margin-top: -10rem;
   transform: skewY(-7deg); }
@@ -518,3 +518,12 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 5rem 0;
   margin-top: -10rem; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #00bbff, #0080ff); }
+
+.book {
+  height: 50rem; }
+  .book__form {
+    width: 80%; }
