@@ -7,6 +7,8 @@
     max-height: 0;
     font-size: 0;
     transition: .25s ease;
+    display: block;
+    padding: 1rem 0;
   }
   
   .read-more-state:checked ~ .read-more-wrap .read-more-target {
@@ -20,7 +22,7 @@
   }
   
   .read-more-state:checked ~ .read-more-trigger:before {
-    content: 'Smanji';
+    content: 'Smanji ';
   } 
   
   .read-more-trigger {
@@ -28,7 +30,7 @@
     display: inline-block;
     padding: 0 .5em;
     color: #666;
-    font-size: .9em;
+    font-size: 1.3rem;
     line-height: 2;
     border: 1px solid #ddd;
     border-radius: .25em;

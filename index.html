@@ -6,37 +6,44 @@
     
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+	
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script  src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
+    <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    
+    
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon1.png">
     
+    
+    
     <title>blueRent rent-a-car</title>
 </head>
 <body>
-    <!-- <nav class="navbar">
-        <ul>
-            <li class="navbar__link"><a href="#">1</a></li>
-    </nav> -->
     <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>O nama</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Naša vozila</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Ostale usluge</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Rezervacija</a></li>
-                    </ul>
-            </nav>
-        </div>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        
+        <div class="navigation__background">&nbsp;</div>
+        
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>O nama</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Naša vozila</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Ostale usluge</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Rezervacija</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         
         <div class="header__logo-box">
@@ -50,47 +57,72 @@
             <a href="#" class="btn btn--white btn--animated">Rezervacija</a>
         </div>
         
-    </header>
-    
-    <main>
-        <section class="section-about">
-            <div class="center-text margin-bot-8">
-                <h2 class="heading-secondary">
-                    O nama
-                </h2>
-            </div>
-            
-            <div class="row">
-                <div class="col-1-of-2">
-                    <p class="paragraph">
-                        Kada govorimo „o nama“ onda je bitno krenuti od razloga zašto smo uopće pokrenuli rent a car tvrtku.
-                    </p>
-                    <p class="paragraph">
-                        Naime, vođeni vlastitim iskustvom sa brojnih službenih i privatnih putovanja koja su nas obogatila i dobrim i lošim iskustvima kada govorimo o najmu vozila, odlučili smo pokrenuti vlastiti posao kako bi pružili uslugu koja će biti prilagođena Vašim stvarnim potrebama. 
-                    </p>                        
-                    <p class="paragraph">
-                        Kada govorimo o najmu vozila, na temelju vlastitih očekivanja i potreba, kreirali smo model poslovanja koji će ispuniti sva očekivanja naših klijenata bez astronomskih troškova i prikrivenih izdataka.
-                    </p>
-                    
-                    <div>
-                        <input type="checkbox" class="read-more-state" id="post-1" />
-                        <p class="paragraph read-more-wrap">
-                            Naš fokus je pružiti kvalitetnu uslugu po realnim cijenama i prihvatljivim uvjetima uz osiguranje potpune tehničke ispravnosti svakog vozila. Naime, osim što želimo biti pristupačni cjenovno, želimo steći i povjerenje klijenata i kvalitetom vozila koje nudimo.
-                            <span class="read-more-target">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#005eff"
+                        },
+                        "button": {
+                            "background": "#fff",
+                            "text": "#005eff"
+                        }
+                    },
+                    "content": {
+                        "message": "Kako bismo poboljšali vaše iskustvo prilikom korištenja naše web stranice koristimo kolačiće (eng. cookies) i slične tehnologije. Ako nastavite s pregledom stranice, smatraćemo da ste suglasni s navedenom uporabom.",
+                        "dismiss": "Slažem se.",
+                        "link": "Više informacija...",
+                        "href": "politika-kolacica.html"
+                    }
+                })});
+            </script>
+        </header>
+        
+        <main>
+            <section class="section-about">
+                <div class="center-text margin-bot-8">
+                    <h2 class="heading-secondary">
+                        O nama
+                    </h2>
+                </div>
+                
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <p class="paragraph">
+                            Kada govorimo „o nama“ onda je bitno krenuti od razloga zašto smo uopće pokrenuli rent a car tvrtku.
+                        </p>
+                        <p class="paragraph">
+                            Naime, vođeni vlastitim iskustvom sa brojnih službenih i privatnih putovanja koja su nas obogatila i dobrim i lošim iskustvima kada govorimo o najmu vozila, odlučili smo pokrenuti vlastiti posao kako bi pružili uslugu koja će biti prilagođena Vašim stvarnim potrebama. 
+                        </p>                        
+                        <p class="paragraph">
+                            Kada govorimo o najmu vozila, na temelju vlastitih očekivanja i potreba, kreirali smo model poslovanja koji će ispuniti sva očekivanja naših klijenata bez astronomskih troškova i prikrivenih izdataka.
+                        </p>
+                        
+                        <div>
+                            <input type="checkbox" class="read-more-state" id="post-1" />
+                            <p class="paragraph read-more-wrap">
+                                Naš fokus je pružiti kvalitetnu uslugu po realnim cijenama i prihvatljivim uvjetima uz osiguranje potpune tehničke ispravnosti svakog vozila. Naime, osim što želimo biti pristupačni cjenovno, želimo steći i povjerenje klijenata i kvalitetom vozila koje nudimo.
+                                <span class="read-more-target">                                
+                                    Ujedno, shvaćamo da nije uvijek lako doći i preuzeti vozilo na određene i već unaprijed zadane lokacije, a što smo se i osobno nebrojeno puta uvjerili te smo se odlučili izaći u susret svima Vama koji nemate vremena voziti se do drugog dijela grada kako bi preuzeli vozilo. To ćemo učiniti mi umjesto Vas sukladno vašim željama i potrebama.
+                                </span>
+                                <span class="read-more-target">
+                                    Naša misija je da nam poklonite povjerenje i to temeljem prepoznate kvalitete naših usluga te da nam se vratite opet!
+                                    
+                                </span>
                                 
-                                Ujedno, shvaćamo da nije uvijek lako doći i preuzeti vozilo na određene i već unaprijed zadane lokacije, a što smo se i osobno nebrojeno puta uvjerili te smo se odlučili izaći u susret svima Vama koji nemate vremena voziti se do drugog dijela grada kako bi preuzeli vozilo. To ćemo učiniti mi umjesto Vas sukladno vašim željama i potrebama.
-                                
-                                Naša misija je da nam poklonite povjerenje i to temeljem prepoznate kvalitete naših usluga te da nam se vratite opet!
                             </p>
                             <label for="post-1" class="read-more-trigger"></label>
                         </div>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/opel corsa.jpg" alt="" class="composition__photo composition__photo--p1"></img>
-                            <img src="img/ford focus.jpg" alt="" class="composition__photo composition__photo--p2"></img>
-                            <img src="img/renault-clio-b98-ph2-TEKPN-BUI-RALU16.jpg.ximg.l_full_m.smart.jpg" alt=""class="composition__photo composition__photo--p3"></img>
-                            <img src="img/skoda fabia.jpg" alt=""class="composition__photo composition__photo--p4"></img>
+                            <img src="img/opel-corsa.jpg" alt="" class="composition__photo composition__photo--p1"/>
+                            <img src="img/ford-focus.jpg" alt="" class="composition__photo composition__photo--p2"/>
+                            <img src="img/renault-clio-b98-ph2-TEKPN-BUI-RALU16.jpg.ximg.l_full_m.smart.jpg" alt="" class="composition__photo composition__photo--p3"/>
+                            <img src="img/skoda-fabia.jpg" alt="" class="composition__photo composition__photo--p4"/>
                         </div>
                     </div>
                 </div>
@@ -350,23 +382,106 @@
                         </div>
                     </div>
                 </div>
-                
+            </section>
+            <section class="section-book">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="book">
+                            <div class="book__form">
+                                <form action="#" class="form" id="book-form">
+                                    <h3 class="book__heading">Popunite upit za rezervaciju vozila</h3>
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" placeholder="Ime i prezime" id="name" required>
+                                        <label for="name" class="form__label">Ime i prezime</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="tel" class="form__input" placeholder="Kontakt telefon" id="phone" required>
+                                        <label for="phone" class="form__label">Kontakt telefon</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" placeholder="Email adresa" id="email" required>
+                                        <label for="email" class="form__label">Email adresa</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <select name="carlist" class="form__input" form="book-form" id="cars">
+                                            <option value="volvo">Opel Astra</option>
+                                            <option value="saab">Opel Astra karavan</option>
+                                            <option value="opel">Renault Clio</option>
+                                            <option value="audi">Ford Focus</option>
+                                            <option value="audi">Opel Vivaro</option>
+                                            <option value="audi">Volkswagen Up</option>
+                                        </select>
+                                        <label for="cars" class="form__label">Automobil</label>
+                                        <div class="form__group">
+                                            
+                                            <div class='form__input input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                            <label class="form__label">Datum preuzimanja</label>
+                                        </div>
+                                        <div class="form__group center-text">
+                                            <button class="btn btn--white">Pošalji</button>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="contact__info">
+                            <h4 class="contact__info--heading">Kontakt info</h4> 
+                            <ul class="contact__info--list"> 
+                                <li class="contact__info--item">Adresa: Petrovaradinska ul. 58, Zagreb </li>
+                                <li class="contact__info--item">Telefon: +385 91 73 78 102 </li>
+                                <li class="contact__info--item">Email: info@bluerent.hr</li>
+                            </ul>
+                        </div>
+                        <div class="contact">
+                            <div class="contact__map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2782.010105873559!2d15.904361523803711!3d45.79102526548391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d159fe4f077d%3A0x81e163dfb8bbe6e2!2sPetrovaradinska+ul.+58%2C+10000%2C+Zagreb!5e0!3m2!1ssr!2shr!4v1551184801397" width="600" height="450" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
             </section>
         </main>
-        
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img class="footer__logo" src="img/logo-blue.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-1-of-1">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Početna</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Uvjeti najma</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Uvjeti korištenja</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Usporedbe sa leasingom</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Ostale usluge</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        <script>
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
     </body>
     </html>
-    <!--     
-        Opel astra 1.6 cdti st enjoy, 2017. Diesel, 81 kw, karavan, 1598 ccm, 5 vrata, manualni mjenjac, klima autom.
-        
-        Ford focus 1.5 tdci, 70 kw, 1499 ccm, 2017. Hatchback, diesel, 5 vrata, manual mjenjac, automat. klima
-        
-        Volkswagen take up 1.0 44 kw, 999 ccm, 2017., benzin, 5 vrata, manual klima i mjenjac
-        
-        Opel astra 1.6 cdti enjoy, hatchback, 81 kw, 2017., 1598ccm, diesel, 5 vrata, klima automatska, menual mjenjac
-        
-        Renault clio, zen, 1.2 16v 54 kw, 1149 ccm, 2017. Benzin, 5 vrata, klima i mjenjac manual
-        
-        Renault clio 1.2 16v limited, 2017. 55 kw, 1159ccm, benzin, 5 vrata, klima i mjenjac manual
-        
-        Opel vivaro combi L2H1, 1.6 cdti, 8+1, 92 kw, 1598ccm, 2018. Diesel, klima automatska, mjenjac manual -->
