@@ -5,7 +5,7 @@
     height: 42rem;
     text-align: center;
     margin-bottom: 1.5rem;
-     
+    
     &__side{
         height: 42rem;
         transition: all .8s ease;
@@ -23,7 +23,7 @@
         }
         
         &--back {
-           
+            
             transform: rotateY(180deg);
             
             &-1 {
@@ -41,11 +41,11 @@
     &:hover &__side--front{
         transform: rotateY(-180deg);
     }
-
+    
     &:hover &__side--back{
         transform: rotateY(0);
     }
-
+    
     &__picture{
         background-size: cover;
         height: 18rem;
@@ -77,15 +77,15 @@
             background-image:  url(../img/vw-up.png); 
         }
     }
-
+    
     &__heading{
         font-size: 2.5rem;
         text-transform: uppercase;
         color: $color-primary;
     }
-
+    
     &__details{
-
+        
         ul{
             list-style: none;
             li {
@@ -95,7 +95,7 @@
             }
         }
     }
-
+    
     &__cta{
         position: absolute;
         top:50%;
@@ -103,21 +103,59 @@
         transform: translate(-50%,-50%); 
         width: 90%;
     }
-
+    
     &__price-box{
         text-align: center;
         color: $color-white;
         margin-bottom: 8rem;
     }
-
+    
     &__price-only{
         font-size: 1.5rem;
         text-transform: uppercase;
     }
-
+    
     &__price-value{
         font-size: 6rem;
         
     }
+    
+    @include respond(tab-port){
+        height: auto;
+        
+        &__side{
+            height: auto;
+            position: relative;
+            border-radius: 4px;
+            box-shadow: 0 2rem 5rem rgba($color-black, .65);
 
+            &--back {
+                transform: rotateY(0);
+            }
+        }
+        
+        &:hover &__side--front{
+            transform: rotateY(0);
+        }
+    
+        &__cta{
+            position: relative;
+            top:0;
+            left:0;
+            transform: translate(0); 
+            width: 100%;
+            padding: 3.5rem;
+        }
+        
+        &__price-box{
+            margin-bottom: 2rem;
+        }
+        
+        
+        &__price-value{
+            font-size: 6rem;
+            
+        }
+    }
+    
 }

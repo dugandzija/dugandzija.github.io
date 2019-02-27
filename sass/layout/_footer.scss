@@ -3,6 +3,10 @@
     padding: 3rem 2rem;
     font-size: 1.4rem;
     text-align: center;
+    @include respond (tab-port){
+        font-size: 2rem;
+    }
+    
 
     &__logo-box{
         text-align: center;
@@ -18,6 +22,8 @@
         border-top: 1px solid $color-gray-dark2;
         padding-top: 2rem;
         display: inline-block;
+
+        
     }
 
     &__list{
@@ -27,9 +33,17 @@
 
     &__item{
         display: inline-block;
+        @include respond (tab-port){
+            display: block;
+        }
+        
 
         &:not(:last-child){
             margin-right: 2.5rem;
+            @include respond (tab-port){
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
         }
     }
 
@@ -40,6 +54,7 @@
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
+            
         }
 
         &:hover,

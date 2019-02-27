@@ -1,5 +1,11 @@
 .center-text { text-align: center; }
 
-.margin-bot-8 { margin-bottom: 8rem; }
+.margin-bot-8 { 
+    margin-bottom: 8rem; 
+
+    @include respond(tab-port){
+        margin-bottom: 5rem;
+    }
+}
 
 .margin-bot-2 { margin-bottom: 2rem; }
