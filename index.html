@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
+    
+    <style> 
+        @font-face {
+            font-family: neuropolitical;
+            src: url(/fonts/neuropolitical.ttf);
+        }
+        
+        body {
+            font-family: neuropolitical;
+        }
+    </style>
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
@@ -26,7 +37,61 @@
     <title>blueRent rent-a-car</title>
 </head>
 <body>
-    <div class="navigation">
+    
+    <nav class="navbar navbar-default navbar-fixed-top nav-blue">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul> -->
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">O nama</a></li>
+                    <li><a href="#">Naša vozila</a></li>
+                    
+                    <li><a href="#">Rezervacija</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ostale usluge <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">TRANSFERI</a></li>
+                            <li><a href="#">NARUCI VOZNJU</a></li>
+                            <li><a href="#">TAXY ZAGREB</a></li>
+                            <li><a href="#">PRIJEVOZ NA POSAO</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         
         <label for="navi-toggle" class="navigation__button">
@@ -43,7 +108,7 @@
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Rezervacija</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
     <header class="header">
         
         <div class="header__logo-box">
@@ -51,7 +116,7 @@
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary--main">blueRent</span>
+                <span class="heading-primary--main">blueRENT</span>
                 <span class="heading-primary--sub">drive better</span>
             </h1>
             <a href="#" class="btn btn--white btn--animated">Rezervacija</a>
@@ -477,10 +542,40 @@
                 
             </div>
         </footer>
+        
+        <!-- HEADER TRANSPARENT TO SOLID -->
         <script>
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-    </body>
-    </html>
+            $(document).ready(function() {
+                // Transition effect for navbar 
+                $(window).scroll(function() {
+                    // checks if window is scrolled more than 500px, adds/removes solid class
+                    if($(this).scrollTop() > 500) { 
+                        $('.nav-blue').addClass('nav-solid');
+                    } else {
+                        $('.nav-blue').removeClass('nav-solid');
+                    }
+                });
+            });</script>
+            
+            <script>
+                $(document).ready(function() {
+                    // Transition effect for navbar 
+                    $(window).scroll(function() {
+                        // checks if window is scrolled more than 500px, adds/removes solid class
+                        if($(this).scrollTop() > 500) { 
+                            $('.dropdown-menu').addClass('dropdown-menu-solid');
+                        } else {
+                            $('.dropdown-menu').removeClass('dropdown-menu-solid');
+                        }
+                    });
+                });</script>
+                
+                <!-- DATE PICKER -->
+                <script>
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>
+            </body>
+            </html>
+            
