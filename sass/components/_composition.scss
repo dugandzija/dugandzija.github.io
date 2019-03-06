@@ -63,3 +63,10 @@
     }
     //composition:hover composition__photo:not(:hover) {
 }
+
+.about__slide{
+    background-image: url(/img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+}
