@@ -579,7 +579,7 @@ body {
     background: #00116e; }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(to bottom, #00116e 0%, rgba(29, 52, 255, 0.1) 40%, transparent 100%), url(../img/hero111.jpg);
   background-size: cover;
   background-position: center;
@@ -595,7 +595,7 @@ body {
     top: 4.5rem;
     left: 4rem; }
   .header__logo {
-    height: 7.5rem; }
+    height: 12rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
