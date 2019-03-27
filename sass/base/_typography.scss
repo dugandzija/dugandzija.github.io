@@ -14,15 +14,10 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 900;
-        letter-spacing: 2.5rem;
+        letter-spacing: 1rem;
         animation-name: moveInLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
-
-        @include respond(phone){
-            letter-spacing: 1rem;
-            font-size: 5rem;
-        }
     }
     
     &--sub {
@@ -34,7 +29,6 @@ body {
         animation-name: moveInRight;
         animation-duration: 2s;
         animation-timing-function: ease-out;
-
         @include respond(phone){
             letter-spacing: .3rem;
             font-size: 1.5rem;
@@ -74,11 +68,9 @@ body {
     text-shadow: .2rem 1rem 1.5rem rgba($color-black, .2);
     margin-bottom: 1.5rem;
 }
-
 .paragraph {
     font-size: 1.65rem;
     text-align: justify;
-
     &:not(:last-child){
         margin-bottom: 1rem;
     }

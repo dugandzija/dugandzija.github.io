@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
-    
-    
     <!-- ###### IMPORTING FONT FROM LOCAL DIRECTORY ###### -->
     <style> 
         @font-face {
@@ -14,7 +12,6 @@
         }
         body { font-family: neuropolitical; }
     </style>
-    
     <!-- ###### BOOTSTRAP AND JQUERY ###### -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
@@ -22,7 +19,6 @@
     <script  src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
     <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-    
     <!-- ###### FONTAWESOME ICONS ###### -->
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -30,14 +26,11 @@
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ###### MAIN CSS FILE ###### -->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/main.css">
     <!-- ###### FAVICON ###### -->
     <link rel="shortcut icon" type="image/png" href="img/favicon1.png">
-    
     <title>blueRent rent-a-car</title>
 </head>
-
 <body>
     <!-- ***** TOP FIXED NAVBAR ***** -->
     <nav class="navbar navbar-default navbar-fixed-top nav-blue">
@@ -72,24 +65,6 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    
-    <!-- ###### 2ND VERSION OF NAVIGATION ###### -->
-    <!-- <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>O nama</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Naša vozila</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Ostale usluge</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Rezervacija</a></li>
-            </ul>
-        </nav>
-    </div> -->
-    
     <!-- ###### SOCIAL MEDIA BAR ###### -->
     <div class="icon-bar">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
@@ -98,10 +73,8 @@
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
     </div>
-    
     <!-- ###### HEADER SECTION ###### -->
     <header class="header">
-        
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Bluerent logo" class="header__logo">
         </div>
@@ -112,7 +85,6 @@
             </h1>
             <a href="#" class="btn btn--white btn--animated">Rezervacija</a>
         </div>
-        
         <!-- ###### COOKIES POPUP AGREEMENT ###### -->
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
         <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
@@ -137,17 +109,17 @@
                 })});
             </script>
         </header>
-        
         <main>
             <!-- ###### ABOUT SECTION ###### -->
             <section class="section-about text-lighter">
-                <div class="center-text margin-bot-8">
-                    <h2 class="heading-secondary text-lighter">
-                        O nama
-                    </h2>
-                </div>
+                
                 <div class="row">
-                    <div class="col-1-of-1">
+                    <div class="col-1-of-2">
+                        <div class="center-text margin-bot-8">
+                            <h2 class="heading-secondary text-lighter">
+                                O nama
+                            </h2>
+                        </div>
                         <p class="paragraph">
                             Kada govorimo „o nama“ onda je bitno krenuti od razloga zašto smo uopće pokrenuli rent a car tvrtku.
                         </p>
@@ -171,15 +143,51 @@
                             <label for="post-1" class="read-more-trigger"></label>
                         </div>
                     </div>
-                    <!-- <div class="col-1-of-2"> 
-                         <div class="composition">
-                            <img src="img/opel-corsa.jpg" alt="" class="composition__photo composition__photo--p1"/>
-                            <img src="img/ford-focus.jpg" alt="" class="composition__photo composition__photo--p2"/>
-                            <img src="img/skoda-fabia.jpg" alt="" class="composition__photo composition__photo--p3"/>
-                        </div> 
-                    </div> -->
+                    <div class="col-1-of-2">
+                        <div class="book">
+                            <div class="book__form">
+                                <form action="#" class="form" id="book-form">
+                                    <h3 class="book__heading">Popunite upit za rezervaciju vozila</h3>
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" placeholder="Ime i prezime" id="name" required>
+                                        <label for="name" class="form__label">Ime i prezime</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="tel" class="form__input" placeholder="Kontakt telefon" id="phone" required>
+                                        <label for="phone" class="form__label">Kontakt telefon</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" placeholder="Email adresa" id="email" required>
+                                        <label for="email" class="form__label">Email adresa</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <select name="carlist" class="form__input" form="book-form" id="cars">
+                                            <option value="volvo">Opel Astra</option>
+                                            <option value="saab">Opel Astra karavan</option>
+                                            <option value="opel">Renault Clio</option>
+                                            <option value="audi">Ford Focus</option>
+                                            <option value="audi">Opel Vivaro</option>
+                                            <option value="audi">Volkswagen Up</option>
+                                        </select>
+                                        <label for="cars" class="form__label">Automobil</label>
+                                        <div class="form__group">
+                                            <div class='form__input input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                            <label class="form__label">Datum preuzimanja</label>
+                                        </div>
+                                        <div class="form__group center-text">
+                                            <button class="btn btn--white">Pošalji</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </section>
             <!-- ###### FEATURES SECTION ###### -->
             <section class="section-features">
@@ -441,54 +449,8 @@
             <!-- ###### BOOKING SECTION ###### -->
             <section class="section-book">
                 <div class="row">
-                    <div class="col-1-of-2">
-                        <div class="book">
-                            <div class="book__form">
-                                <form action="#" class="form" id="book-form">
-                                    <h3 class="book__heading">Popunite upit za rezervaciju vozila</h3>
-                                    <div class="form__group">
-                                        <input type="text" class="form__input" placeholder="Ime i prezime" id="name" required>
-                                        <label for="name" class="form__label">Ime i prezime</label>
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="tel" class="form__input" placeholder="Kontakt telefon" id="phone" required>
-                                        <label for="phone" class="form__label">Kontakt telefon</label>
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="email" class="form__input" placeholder="Email adresa" id="email" required>
-                                        <label for="email" class="form__label">Email adresa</label>
-                                    </div>
-                                    <div class="form__group">
-                                        <select name="carlist" class="form__input" form="book-form" id="cars">
-                                            <option value="volvo">Opel Astra</option>
-                                            <option value="saab">Opel Astra karavan</option>
-                                            <option value="opel">Renault Clio</option>
-                                            <option value="audi">Ford Focus</option>
-                                            <option value="audi">Opel Vivaro</option>
-                                            <option value="audi">Volkswagen Up</option>
-                                        </select>
-                                        <label for="cars" class="form__label">Automobil</label>
-                                        <div class="form__group">
-                                            
-                                            <div class='form__input input-group date' id='datetimepicker1'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                            <label class="form__label">Datum preuzimanja</label>
-                                        </div>
-                                        <div class="form__group center-text">
-                                            <button class="btn btn--white">Pošalji</button>
-                                        </div>
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                     <!-- ###### CONTACT INFO ###### -->
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-1">
                         <div class="contact__info">
                             <h4 class="contact__info--heading">Kontakt info</h4> 
                             <ul class="contact__info--list"> 
@@ -527,10 +489,12 @@
                             <li class="footer__item">
                                 <a href="#" class="footer__link">Izjava o zastiti osobnih podataka</a>
                             </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Uvjeti placanja</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </footer>
         
@@ -546,27 +510,28 @@
                         $('.nav-blue').removeClass('nav-solid');
                     }
                 });
-            });</script>
-            
-            <script>
-                $(document).ready(function() {
-                    // Transition effect for navbar 
-                    $(window).scroll(function() {
-                        // checks if window is scrolled more than 500px, adds/removes solid class
-                        if($(this).scrollTop() > 500) { 
-                            $('.dropdown-menu').addClass('dropdown-menu-solid');
-                        } else {
-                            $('.dropdown-menu').removeClass('dropdown-menu-solid');
-                        }
-                    });
-                });</script>
-                
-                <!-- DATE PICKER -->
-                <script>
-                    $(function () {
-                        $('#datetimepicker1').datetimepicker();
-                    });
-                </script>
-            </body>
-            </html>
-            
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                // Transition effect for navbar 
+                $(window).scroll(function() {
+                    // checks if window is scrolled more than 500px, adds/removes solid class
+                    if($(this).scrollTop() > 500) { 
+                        $('.dropdown-menu').addClass('dropdown-menu-solid');
+                    } else {
+                        $('.dropdown-menu').removeClass('dropdown-menu-solid');
+                    }
+                });
+            });
+        </script>
+        
+        <!-- DATE PICKER -->
+        <script>
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </body>
+    </html>
+    

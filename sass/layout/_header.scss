@@ -1,5 +1,5 @@
 .header {
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(
                         to bottom,
                         rgba($color-primary-dark, 1) 0%,
@@ -8,15 +8,8 @@
                     url(../img/hero111.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(100% 0, 100% 83vh, 50% 100%, 0 83vh, 0 0);
-    clip-path: polygon(100% 0, 100% 83vh, 50% 100%, 0 83vh, 0 0);
     
     position: relative;
-
-    @include respond(tab-port){
-        -webkit-clip-path: polygon(100% 0, 100% 90vh, 50% 100%, 0 90vh, 0 0);
-        clip-path: polygon(100% 0, 100% 90vh, 50% 100%, 0 90vh, 0 0);
-    }
     &__logo-box {
         position: absolute;
         top: 4.5rem;
@@ -29,7 +22,7 @@
     
     &__text-box {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
