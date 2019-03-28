@@ -2,10 +2,9 @@
     height: 100vh;
     background-image: linear-gradient(
                         to bottom,
-                        rgba($color-primary-dark, 1) 0%,
-                        rgba($color-primary-light, 0.1) 40%, 
-                        transparent 100%),
-                    url(../img/hero111.jpg);
+                        rgba($color-primary, 1) 0%, 
+                        transparent 90%),
+                    url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
     
