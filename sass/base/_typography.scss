@@ -49,7 +49,7 @@ body {
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
-    text-shadow: 0 1px 1.5rem rgba($color-black, 1);
+    text-shadow: 0 1px 1.5rem rgba($color-black, .8);
 
     @include respond(tab-port){
         font-size: 2.8rem;

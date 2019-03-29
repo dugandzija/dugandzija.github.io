@@ -179,7 +179,7 @@
                                             <label class="form__label">Datum preuzimanja</label>
                                         </div>
                                         <div class="form__group center-text">
-                                            <button class="btn btn--white">Pošalji</button>
+                                            <input type="submit" name="submit" value="Pošalji" class="btn btn--white" />
                                         </div>
                                     </div>
                                 </form>
@@ -189,7 +189,7 @@
                 </div>
             </section>
             <!-- ###### FEATURES SECTION ###### -->
-            <section class="section-features">
+            <section class="section-features" id="section-features">
                 <div class="row">
                     <div class="col-1-of-3">
                         <div class="feature-box">
@@ -236,7 +236,7 @@
                                     <li class="feature-box__text--list">Zračna luka Zagreb/ fiksno 90 kn</li>
                                 </ul>
                             </p>
-                            <a class="feature-box__btn" href="">NARUČI VOŽNJU</a>
+                            <a class="feature-box__btn" href="#popup1">NARUČI VOŽNJU</a>
                         </div>
                     </div>
                     <div class="col-1-of-3">
@@ -254,7 +254,7 @@
                                 dolazi vozač i odvozi vas na unaprijed dogovoreno odredište. Dogovorite se sa kolegama i preijateljima i
                                 podjelite vožnju.
                             </p>
-                            <a class="feature-box__btn" href="">POŠALJI NAM UPIT</a>
+                            <a class="feature-box__btn" href="#popup2">POŠALJI NAM UPIT</a>
                         </div>
                     </div>
                 </div>
@@ -527,13 +527,86 @@
             </div>
         </footer>
         
+        
+        <div class="popup" id="popup1">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/logo-blue.png" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-features" class="popup__close">&times;</a>
+                    <div class="popup__text">
+                        <div class="center-text">
+                            <h2 class="popup__text--heading">NARUČI VOŽNJU</h2>
+                        </div>
+                        <form action="#" class="popup-form" id="popup-form">
+                            <div class="popup-form__group">
+                                <input type="text" class="popup-form__input" placeholder="Pocetna adresa" id="name" required>
+                                <label for="name" class="popup-form__label">Pocetna adresa</label>
+                            </div>
+                            <div class="popup-form__group">
+                                <input type="text" class="popup-form__input" placeholder="Odrediste" id="name" required>
+                                <label for="name" class="popup-form__label">Odrediste</label>
+                            </div>
+                            <div class="popup-form__group">
+                                <input type="text" class="popup-form__input" placeholder="Ime i prezime" id="name" required>
+                                <label for="name" class="popup-form__label">Pocetna adresa</label>
+                            </div>
+                            <div class="popup-form__group">
+                                <input type="tel" class="popup-form__input" placeholder="Kontakt telefon" id="name" required>
+                                <label for="name" class="popup-form__label">Kontakt telefon</label>
+                            </div>
+                            <div class="popup-form__group">
+                                <input type="email" class="popup-form__input" placeholder="Email adresa" id="name" required>
+                                <label for="name" class="popup-form__label">Email adresa</label>
+                            </div>
+                            <div class="popup-form__group center-text">
+                                <input type="submit" name="submit" value="Pošalji" class="popup-form__btn" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup2">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/logo-blue.png" alt="Tour photo" class="popup__img">
+                    </div>
+                    <div class="popup__right">
+                        <a href="#section-features" class="popup__close">&times;</a>
+                        <div class="popup__text">
+                            <div class="center-text">
+                                <h2 class="popup__text--heading">PRIJEVOZ NA POSAO</h2>
+                            </div>
+                            <form action="#" class="popup-form" id="popup-form">
+                                <div class="popup-form__group">
+                                    <input type="text" class="popup-form__input" placeholder="Ime i prezime" id="name" required>
+                                    <label for="name" class="popup-form__label">Pocetna adresa</label>
+                                </div>
+                                <div class="popup-form__group">
+                                    <input type="tel" class="popup-form__input" placeholder="Kontakt telefon" id="name" required>
+                                    <label for="name" class="popup-form__label">Kontakt telefon</label>
+                                </div>
+                                <div class="popup-form__group">
+                                    <input type="email" class="popup-form__input" placeholder="Email adresa" id="name" required>
+                                    <label for="name" class="popup-form__label">Email adresa</label>
+                                </div>
+                                <div class="popup-form__group center-text">
+                                    <input type="submit" name="submit" value="Pošalji" class="popup-form__btn" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- HEADER TRANSPARENT TO SOLID -->
         <script>
             $(document).ready(function() {
                 // Transition effect for navbar 
                 $(window).scroll(function() {
-                    // checks if window is scrolled more than 500px, adds/removes solid class
-                    if($(this).scrollTop() > 500) { 
+                    // checks if window is scrolled more than 250px, adds/removes solid class
+                    if($(this).scrollTop() > 250) { 
                         $('.nav-blue').addClass('nav-solid');
                     } else {
                         $('.nav-blue').removeClass('nav-solid');
@@ -545,8 +618,8 @@
             $(document).ready(function() {
                 // Transition effect for navbar 
                 $(window).scroll(function() {
-                    // checks if window is scrolled more than 500px, adds/removes solid class
-                    if($(this).scrollTop() > 500) { 
+                    // checks if window is scrolled more than 250px, adds/removes solid class
+                    if($(this).scrollTop() > 250) { 
                         $('.dropdown-menu').addClass('dropdown-menu-solid');
                     } else {
                         $('.dropdown-menu').removeClass('dropdown-menu-solid');
