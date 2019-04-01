@@ -21,15 +21,27 @@
     }
     
     &__text-box {
-        animation: backSlider 10s ease infinite .2s;
-        background-size: cover;
-        background-position: center;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -80%);
         text-align: center;
         text-shadow: 0 2px 5px rgba($color-black,.5);
+        z-index: 2;
+    }
+
+    &__car-box{
+        height: 50%;
+        width: 65%;
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        animation: backSlider 15s ease-in-out infinite .2s;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
     }
 }
 

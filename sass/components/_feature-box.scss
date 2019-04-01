@@ -6,7 +6,8 @@
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
     transition: all .3s;
-    height: 47rem;
+    height: 45.5rem;
+    overflow: hidden;
     
     @include respond(tab-port){
         padding: 1.5rem;
