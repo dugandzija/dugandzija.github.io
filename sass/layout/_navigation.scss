@@ -1,5 +1,5 @@
 .nav-blue{
-    background: transparent;
+    background-color: transparent;
     transition: 1s ease;
     ul{
         li{
@@ -11,6 +11,12 @@
                     // color: black !important;
                     transform: scale(1.1);
                     text-shadow: 1px 2px 4px $color-black;
+                    @include respond (phone){
+                        background-color: $color-primary-dark !important;
+                    }
+                }
+                @include respond (phone){
+                    background: $color-primary-dark;
                 }
             }
         }
@@ -44,4 +50,15 @@ background: transparent;
             }
         }
     }
+}
+
+.icon-navbar{
+    display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
 }

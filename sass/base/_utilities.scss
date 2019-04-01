@@ -11,3 +11,13 @@
 .margin-bot-2 { margin-bottom: 2rem; }
 
 .text-lighter{ color: $color-gray-light1; }
+
+.vh-30{
+    height: 30vh;
+}
+
+.icon-bar{
+    @include respond(phone){
+        display: none;
+    }
+}

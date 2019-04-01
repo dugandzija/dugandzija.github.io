@@ -48,21 +48,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @keyframes backSlider {
   0% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg1.jpg); }
+    background-image: url(/img/ford-focus.png); }
   24% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg1.jpg); }
+    background-image: url(/img/ford-focus.png); }
   25% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg2.jpeg); }
+    background-image: url(/img/opel-astra.png); }
   49% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg2.jpeg); }
+    background-image: url(/img/opel-astra.png); }
   50% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg3.jpg); }
+    background-image: url(/img/renault-clio.png); }
   74% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg3.jpg); }
+    background-image: url(/img/renault-clio.png); }
   75% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg4.jpg); }
+    background-image: url(/img/opel-vivaro.png); }
   100% {
-    background-image: linear-gradient(to bottom, rgba(61, 61, 61, 0.1) 0%, black 90%), url(/img/bg4.jpg); } }
+    background-image: url(/img/opel-vivaro.png); } }
 
 *,
 *::after,
@@ -171,6 +171,13 @@ body {
 
 .text-lighter {
   color: #f7f7f7; }
+
+.vh-30 {
+  height: 30vh; }
+
+@media only screen and (max-width: 37.5em) {
+  .icon-bar {
+    display: none; } }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
@@ -614,7 +621,8 @@ body {
     padding: 3rem 2rem; }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    margin-top: 3rem; }
   .popup__text {
     width: 80%;
     font-size: 1.4rem;
@@ -692,7 +700,7 @@ body {
   transform: translateY(-4rem); }
 
 .nav-blue {
-  background: transparent;
+  background-color: transparent;
   transition: 1s ease; }
   .nav-blue ul li a {
     color: #f7f7f7 !important;
@@ -701,6 +709,12 @@ body {
     .nav-blue ul li a:hover {
       transform: scale(1.1);
       text-shadow: 1px 2px 4px #000; }
+      @media only screen and (max-width: 37.5em) {
+        .nav-blue ul li a:hover {
+          background-color: #1d76bb !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav-blue ul li a {
+        background: #1d76bb; } }
 
 .nav-solid {
   background: #1d76bb; }
@@ -721,9 +735,18 @@ body {
   .dropdown-menu-solid li a:hover {
     background: #1d76bb; }
 
+.icon-navbar {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px; }
+
 .header {
   height: 100vh;
-  background-image: linear-gradient(to bottom, #1d76bb 0%, transparent 90%), url(../img/hero.jpg);
+  background-image: linear-gradient(to bottom, #1d76bb 0%, transparent 90%), url(../img/airstrip.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -734,6 +757,29 @@ body {
   .header__logo {
     height: 7.5rem; }
   .header__text-box {
+    animation: backSlider 10s ease infinite .2s;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+
+.header-alt {
+  height: 15rem;
+  background-image: linear-gradient(to bottom, #1d76bb 0%, transparent 90%), url(../img/hero-mob.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header-alt__logo-box {
+    position: absolute;
+    top: .5rem;
+    left: 2rem; }
+  .header-alt__logo {
+    height: 12.5rem; }
+  .header-alt__text-box {
     position: absolute;
     top: 50%;
     left: 50%;

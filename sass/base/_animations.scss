@@ -48,59 +48,35 @@
 
 @keyframes backSlider{
     0% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg1.jpg);
+        background-image:  
+                        url(/img/ford-focus.png);
     }
     24% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg1.jpg);
+        background-image:  
+                        url(/img/ford-focus.png);
     }
     25% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg2.jpeg);
+        background-image:  
+                        url(/img/opel-astra.png);
     }
     49% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg2.jpeg);
+        background-image:  
+                        url(/img/opel-astra.png);
     }
     50% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg3.jpg);
+        background-image:  
+                        url(/img/renault-clio.png);
     }
     74% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg3.jpg);
+        background-image:  
+                        url(/img/renault-clio.png);
     }
     75% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg4.jpg);
+        background-image:  
+                        url(/img/opel-vivaro.png);
     }
     100% {
-        background-image: linear-gradient(
-                        to bottom,
-                        rgba($color-gray-dark, .1) 0%,
-                        rgba($color-black, 1) 90%),  
-                        url(/img/bg4.jpg);
+        background-image:  
+                        url(/img/opel-vivaro.png);
     }
 }
