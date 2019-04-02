@@ -12,6 +12,18 @@
     @include respond(tab-port){
         padding: 1.5rem;
     }
+
+    &:last-child{
+        padding: 0;
+    }
+    &__carousel{
+        animation: backSlider2 15s ease-in-out infinite .2s;
+        height: 46rem;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
     
     &__icon{
         font-size: 6rem;
@@ -29,6 +41,7 @@
     }
     &__text{
         text-align: justify;
+        padding: .5rem 2rem;
         &--list{
             text-align: left;
             margin-left: 1.5rem;

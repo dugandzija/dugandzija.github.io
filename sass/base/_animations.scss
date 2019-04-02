@@ -80,3 +80,17 @@
                         url(/img/opel-vivaro.png);
     }
 }
+
+@keyframes backSlider2{
+    0% { background-image: url(/img/zagreb.jpg); }
+    19% { background-image: url(/img/zagreb.jpg); }
+    20% { background-image: url(/img/beograd.jpg); }
+    39% { background-image: url(/img/beograd.jpg); }
+    40% { background-image: url(/img/sarajevo.jpg); }
+    59% { background-image: url(/img/sarajevo.jpg); }
+    60% { background-image: url(/img/ljubljana.jpg); }
+    79% { background-image: url(/img/ljubljana.jpg); }
+    80% { background-image: url(/img/budimpesta.jpg); }
+    100% { background-image: url(/img/budimpesta.jpg); }
+    
+}

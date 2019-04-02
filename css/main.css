@@ -64,6 +64,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
   100% {
     background-image: url(/img/opel-vivaro.png); } }
 
+@keyframes backSlider2 {
+  0% {
+    background-image: url(/img/zagreb.jpg); }
+  19% {
+    background-image: url(/img/zagreb.jpg); }
+  20% {
+    background-image: url(/img/beograd.jpg); }
+  39% {
+    background-image: url(/img/beograd.jpg); }
+  40% {
+    background-image: url(/img/sarajevo.jpg); }
+  59% {
+    background-image: url(/img/sarajevo.jpg); }
+  60% {
+    background-image: url(/img/ljubljana.jpg); }
+  79% {
+    background-image: url(/img/ljubljana.jpg); }
+  80% {
+    background-image: url(/img/budimpesta.jpg); }
+  100% {
+    background-image: url(/img/budimpesta.jpg); } }
+
 *,
 *::after,
 *::before {
@@ -468,6 +490,15 @@ body {
   @media only screen and (max-width: 56.25em) {
     .feature-box {
       padding: 1.5rem; } }
+  .feature-box:last-child {
+    padding: 0; }
+  .feature-box__carousel {
+    animation: backSlider2 15s ease-in-out infinite .2s;
+    height: 46rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat; }
   .feature-box__icon {
     font-size: 6rem;
     display: block;
@@ -480,7 +511,8 @@ body {
   .feature-box:hover {
     transform: translateY(-0.5rem) scale(1.05); }
   .feature-box__text {
-    text-align: justify; }
+    text-align: justify;
+    padding: .5rem 2rem; }
     .feature-box__text--list {
       text-align: left;
       margin-left: 1.5rem; }
