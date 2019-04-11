@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
-    <!-- ###### IMPORTING FONT FROM LOCAL DIRECTORY ###### -->
     <style> 
         @font-face {
             font-family: neuropolitical;
@@ -51,15 +49,16 @@
                     <li><a href="#">O nama</a></li>
                     <li><a href="#">Naša vozila</a></li>
                     <li><a href="#">Rezervacija</a></li>
+                    <li><a href="#">Transferi</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ostale usluge <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">TRANSFERI</a></li>
                             <li><a href="#">TAXI</a></li>
                             <li><a href="#">PRIJEVOZ NA POSAO</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -68,53 +67,53 @@
     <div class="icon-bar">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-        <a href="#" class="google"><i class="fa fa-google"></i></a> 
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
-    </div>
-    <!-- ###### HEADER SECTION ###### -->
-    <header class="header">
-        <div class="header__logo-box">
-            <img src="img/logo-white.png" alt="Bluerent logo" class="header__logo">
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+        <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>  -->
         </div>
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">blueRENT</span>
-                <span class="heading-primary--sub">drive better</span>
-            </h1>
-            <a href="#book-form" class="btn btn--white btn--animated">Rezervacija</a>
-        </div>
-        <div class="header__car-box">
-            
-        </div>
-        <!-- ###### COOKIES POPUP AGREEMENT ###### -->
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-        <script>
-            window.addEventListener("load", function(){
-                window.cookieconsent.initialise({
-                    "palette": {
-                        "popup": {
-                            "background": "#005eff"
+        <!-- ###### HEADER SECTION ###### -->
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="img/logo-white.png" alt="Bluerent logo" class="header__logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">blueRENT</span>
+                    <span class="heading-primary--sub">drive better</span>
+                </h1>
+                <a href="#book-form" class="btn btn--white btn--animated">Rezervacija</a>
+            </div>
+            <div class="header__car-box">
+                
+            </div>
+            <!-- ###### COOKIES POPUP AGREEMENT ###### -->
+            <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+            <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+            <script>
+                window.addEventListener("load", function(){
+                    window.cookieconsent.initialise({
+                        "palette": {
+                            "popup": {
+                                "background": "#005eff"
+                            },
+                            "button": {
+                                "background": "#fff",
+                                "text": "#005eff"
+                            }
                         },
-                        "button": {
-                            "background": "#fff",
-                            "text": "#005eff"
+                        "content": {
+                            "message": "Kako bismo poboljšali vaše iskustvo prilikom korištenja naše web stranice koristimo kolačiće (eng. cookies) i slične tehnologije. Ako nastavite s pregledom stranice, smatraćemo da ste suglasni s navedenom uporabom.",
+                            "dismiss": "Slažem se.",
+                            "link": "Više informacija...",
+                            "href": "politika-kolacica.html"
                         }
-                    },
-                    "content": {
-                        "message": "Kako bismo poboljšali vaše iskustvo prilikom korištenja naše web stranice koristimo kolačiće (eng. cookies) i slične tehnologije. Ako nastavite s pregledom stranice, smatraćemo da ste suglasni s navedenom uporabom.",
-                        "dismiss": "Slažem se.",
-                        "link": "Više informacija...",
-                        "href": "politika-kolacica.html"
-                    }
-                })});
+                    })
+                });
             </script>
         </header>
         <main>
             <!-- ###### ABOUT SECTION ###### -->
             <section class="section-about text-lighter">
-                
                 <div class="row">
                     <div class="col-1-of-2">
                         <div class="center-text margin-bot-8">
@@ -172,18 +171,27 @@
                                             <option value="audi">Volkswagen Up</option>
                                         </select>
                                         <label for="cars" class="form__label">Automobil</label>
-                                        <div class="form__group">
-                                            <div class='form__input input-group date' id='datetimepicker1'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                            <label class="form__label">Datum preuzimanja</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
                                         </div>
-                                        <div class="form__group center-text">
-                                            <input type="submit" name="submit" value="Pošalji" class="btn btn--white" />
+                                        <label class="form__label">Datum preuzimanja</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker2'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
                                         </div>
+                                        <label class="form__label">Datum povratka</label>
+                                    </div>
+                                    <div class="form__group center-text">
+                                        <input type="submit" name="submit" value="Pošalji" class="btn btn--white" />
                                     </div>
                                 </form>
                             </div>
@@ -220,14 +228,14 @@
                     <div class="col-1-of-2">
                         <div class="feature-box">
                             <div class="feature-box__carousel">
-
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- ###### OUR CARS SECTIONS ###### -->
-            <section class="section-cars">
+            <section class="section-cars" id="section-cars">
                 <div class="center-text margin-bot-8">
                     <h2 class="heading-secondary">
                         Naša vozila
@@ -441,6 +449,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-1-of-1">
+                        <a href="#popup1">Cjenik od 01.10. do 31.05.</a><br>
+                        <a href="#popup1">Cjenik od 01.06. do 31.06.</a><br>
+                        <a href="#popup1">Cjenik od 01.07. do 31.08.</a><br>
+                        <a href="#popup1">Cjenik od 01.09. do 31.09.</a><br>
+                    </div>
+                </div>
             </section>
             <!-- ###### BOOKING SECTION ###### -->
             <section class="section-book">
@@ -500,37 +516,77 @@
                 <div class="popup__left">
                     <img src="img/logo-blue.png" alt="Tour photo" class="popup__img">
                 </div>
-                <div class="popup__right">
-                    <a href="#section-features" class="popup__close">&times;</a>
+                <div class="popup_right">
+                    <a href="#section-cars" class="popup__close">&times;</a>
                     <div class="popup__text">
-                        <div class="center-text">
-                            <h2 class="popup__text--heading">NARUČI VOŽNJU</h2>
-                        </div>
-                        <form action="#" class="popup-form" id="popup-form">
-                            <div class="popup-form__group">
-                                <input type="text" class="popup-form__input" placeholder="Pocetna adresa" id="name" required>
-                                <label for="name" class="popup-form__label">Pocetna adresa</label>
-                            </div>
-                            <div class="popup-form__group">
-                                <input type="text" class="popup-form__input" placeholder="Odrediste" id="name" required>
-                                <label for="name" class="popup-form__label">Odrediste</label>
-                            </div>
-                            <div class="popup-form__group">
-                                <input type="text" class="popup-form__input" placeholder="Ime i prezime" id="name" required>
-                                <label for="name" class="popup-form__label">Pocetna adresa</label>
-                            </div>
-                            <div class="popup-form__group">
-                                <input type="tel" class="popup-form__input" placeholder="Kontakt telefon" id="name" required>
-                                <label for="name" class="popup-form__label">Kontakt telefon</label>
-                            </div>
-                            <div class="popup-form__group">
-                                <input type="email" class="popup-form__input" placeholder="Email adresa" id="name" required>
-                                <label for="name" class="popup-form__label">Email adresa</label>
-                            </div>
-                            <div class="popup-form__group center-text">
-                                <input type="submit" name="submit" value="Pošalji" class="popup-form__btn" />
-                            </div>
-                        </form>
+                        <table>
+                            <caption>Cijena po danu (kn)</caption>
+                            <tr>
+                                <th>Marka vozila</th>
+                                <th>1-2 dana</th>
+                                <th>3-8 dana</th>
+                                <th>9-15 dana</th>
+                                <th>16-22 dana</th>
+                                <th>23-30 dana</th>
+                            </tr>
+                            <tr>
+                                <td>VW UP!</td>
+                                <td>200</td>
+                                <td>150</td>
+                                <td>120</td>
+                                <td>100</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Renault Clie</td>
+                                <td>250</td>
+                                <td>200</td>
+                                <td>170</td>
+                                <td>150</td>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <td>Opel Astra</td>
+                                <td>300</td>
+                                <td>250</td>
+                                <td>220</td>
+                                <td>200</td>
+                                <td>180</td>
+                            </tr>
+                            <tr>
+                                <td>Ford Focus</td>
+                                <td>300</td>
+                                <td>250</td>
+                                <td>220</td>
+                                <td>200</td>
+                                <td>180</td>
+                            </tr>
+                            <tr>
+                                <td>Opel Astra karavan</td>
+                                <td>300</td>
+                                <td>250</td>
+                                <td>220</td>
+                                <td>200</td>
+                                <td>180</td>
+                            </tr>
+                            <tr>
+                                <td>Opel Vivaro</td>
+                                <td>500</td>
+                                <td>450</td>
+                                <td>400</td>
+                                <td>350</td>
+                                <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>Opel Corsa automatic</td>
+                                <td>250</td>
+                                <td>200</td>
+                                <td>170</td>
+                                <td>150</td>
+                                <td>130</td>
+                            </tr>
+                        </table>
+                        
                     </div>
                 </div>
             </div>
@@ -598,13 +654,14 @@
         <!-- DATE PICKER -->
         <script>
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker1').datetimepicker({format:'DD/MM/YYYY HH:mm'});
+                $('#datetimepicker2').datetimepicker({format:'DD/MM/YYYY HH:mm'});
             });
         </script>
     </body>
     </html>
-<!--     
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <!--     
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="img/zagreb.jpg" alt="Zagreb">
@@ -632,6 +689,3 @@
             </a>
         </div>
     </div> -->
-
-Volkswagen take up 1.0 44 kw, 999 ccm, 2017., benzin, 5 vrata, manual klima i mjenjac
-

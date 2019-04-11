@@ -19,7 +19,7 @@
     &__content {
         @include absCenter;
 
-        width: 60%;
+        width: 70%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
@@ -53,6 +53,24 @@
         font-size: 1.4rem;
         margin: 2rem;
 
+        table{
+            text-align: center;
+            tr{
+                th{
+                    background-color: $color-primary;
+                    padding: .5rem;
+                    margin: .5rem;
+                    border: 2px solid $color-black;
+                    color: $color-black;
+                    text-align: center;
+                }
+                td{
+                    border: 2px solid $color-black;
+                    padding: .5rem;
+                    
+                }
+            }
+        }
         &--heading{
             text-shadow: 1px 2px 4px $color-primary;
         }
