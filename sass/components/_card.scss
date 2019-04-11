@@ -19,7 +19,7 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         
         &--front {
-            
+            overflow: hidden;
         }
         
         &--back {
@@ -47,7 +47,9 @@
     }
     
     &__picture{
-        background-size: cover;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 18rem;
         width: 90%;
         margin: 0 auto;
@@ -120,7 +122,7 @@
         
     }
     
-    @include respond(tab-port){
+    @include respond(tab-land){
         height: auto;
         
         &__side{
