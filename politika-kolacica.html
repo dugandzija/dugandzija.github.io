@@ -3,217 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    
+    <!-- ###### IMPORTING FONT FROM LOCAL DIRECTORY ###### -->
+    <style> 
+        @font-face {
+            font-family: neuropolitical;
+            src: url(/fonts/neuropolitical.ttf);
+        }
+        body { font-family: neuropolitical; }
+    </style>
+    <!-- ###### BOOTSTRAP AND JQUERY ###### -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-	
     <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
     <script  src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
     <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-    
-    
+    <!-- ###### FONTAWESOME ICONS ###### -->
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/icon-font.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ###### MAIN CSS FILE ###### -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- ###### FAVICON ###### -->
     <link rel="shortcut icon" type="image/png" href="img/favicon1.png">
-    
-    
-    
     <title>blueRent rent-a-car</title>
 </head>
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-        
-        <div class="navigation__background">&nbsp;</div>
-        
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>O nama</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Naša vozila</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Ostale usluge</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Rezervacija</a></li>
-            </ul>
-        </nav>
+    <!-- ***** TOP FIXED NAVBAR ***** -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-blue">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-navbar"></span>
+                    <span class="icon-navbar"></span>
+                    <span class="icon-navbar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section-header">O nama</a></li>
+                    <li><a href="#section-cars">Naša vozila</a></li>
+                    <li><a href="#section-about">Rezervacija</a></li>
+                    <li><a href="#section-features">Transferi</a></li>
+                    <li><a href="#section-contact">Kontakt</a></li>
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ostale usluge <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">TRANSFERI</a></li>
+                            <li><a href="#">TAXI</a></li>
+                            <li><a href="#">PRIJEVOZ NA POSAO</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- ###### SOCIAL MEDIA BAR ###### -->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
     </div>
-    <header class="header">
-        
-            <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Bluerent logo" class="header__logo">
-            </div>
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">blueRent</span>
-                    <span class="heading-primary--sub">Najam vozila po fantastičnim uslovima</span>
-                </h1>
-                <a href="#" class="btn btn--white btn--animated">Rezervacija</a>
-            </div>
-            
-            <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-            <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-            <script>
-                window.addEventListener("load", function(){
-                    window.cookieconsent.initialise({
-                        "palette": {
-                            "popup": {
-                                "background": "#005eff"
-                            },
-                            "button": {
-                                "background": "#fff",
-                                "text": "#005eff"
-                            }
+    <!-- ###### HEADER SECTION ###### -->
+    <header class="header-alt">
+        <div class="header-alt__logo-box">
+            <img src="img/logo-white.png" alt="Bluerent logo" class="header-alt__logo">
+        </div>
+        <!-- ###### COOKIES POPUP AGREEMENT ###### -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#005eff"
                         },
-                        "content": {
-                            "message": "Kako bismo poboljšali vaše iskustvo prilikom korištenja naše web stranice koristimo kolačiće (eng. cookies) i slične tehnologije. Ako nastavite s pregledom stranice, smatraćemo da ste suglasni s navedenom uporabom.",
-                            "dismiss": "Slažem se.",
-                            "link": "Više informacija...",
-                            "href": "politika-kolacica.html"
+                        "button": {
+                            "background": "#fff",
+                            "text": "#005eff"
                         }
-                    })});
-                </script>
-            </header>
-    
-    <main>
-        <section class="section-cookies">
-            <div class="row">
-                <div class="col-1-of-1">
-                    <h2 class="cookies__heading">Politika o kolačićima</h2>
+                    },
+                    "content": {
+                        "message": "Kako bismo poboljšali vaše iskustvo prilikom korištenja naše web stranice koristimo kolačiće (eng. cookies) i slične tehnologije. Ako nastavite s pregledom stranice, smatraćemo da ste suglasni s navedenom uporabom.",
+                        "dismiss": "Slažem se.",
+                        "link": "Više informacija...",
+                        "href": "politika-kolacica.html"
+                    }
+                })});
+            </script>
+        </header>
+        <main>
+            <!-- ########## COOKIES SECTION ########## -->
+            <section class="section-cookies">
+                <div class="row">
+                    <div class="col-1-of-1">
+                        <h2 class="cookies__heading">Politika o kolačićima</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
+                <div class="row">
                     <div class="col-1-of-1">
                         <h3 class="cookies__subheading">Uvod</h3>
                         <p class="cookies__paragraph">
-                                BLUE RENT d.o.o. upotrebljava kolačiće (engl. cookies) koji nam pomažu isporučiti usluge, omogućavaju ispravno funkcioniranje web stranice i Vama omogućavaju bolje korisničko iskustvo.
+                            BLUE RENT d.o.o. upotrebljava kolačiće (engl. cookies) koji nam pomažu isporučiti usluge, omogućavaju ispravno funkcioniranje web stranice i Vama omogućavaju bolje korisničko iskustvo.
                         </p>
                         <p class="cookies__paragraph">
-                                Razumijemo da vam je vaša privatnost bitna i želimo biti transparentni o načinima na koje koristimo tehnologiju. Ova izjava o kolačićima objašnjava kako kolačići i druge slične tehnologije mogu biti pohranjene na vaše uređaje te upotrebljavane kada posjetite naše web stranice.
+                            Razumijemo da vam je vaša privatnost bitna i želimo biti transparentni o načinima na koje koristimo tehnologiju. Ova izjava o kolačićima objašnjava kako kolačići i druge slične tehnologije mogu biti pohranjene na vaše uređaje te upotrebljavane kada posjetite naše web stranice.
                         </p>
                         <p class="cookies__paragraph">
                             Nastavkom korištenja naših web stranica prihvaćate da možemo pohranjivati i pristupati kolačićima i sličnim tehnologija kao što je ovdje opisano.
                         </p>
                         <h3 class="cookies__subheading">ŠTO JE COOKIE (KOLAČIĆ)?</h3>
                         <p class="cookies__paragraph">
-                                Kolačić je mala datoteka koju na vaše računalo sprema internetska stranica koju posjetite. Kolačić obavještava internetsku stranicu da se postojeći korisnik ponovno priključio pamteći njegove postavke. Kolačići bilježe vaše preferencije i postavke, unose ih u internetske obrasce i informacije za prijavljene korisnike.
+                            Kolačić je mala datoteka koju na vaše računalo sprema internetska stranica koju posjetite. Kolačić obavještava internetsku stranicu da se postojeći korisnik ponovno priključio pamteći njegove postavke. Kolačići bilježe vaše preferencije i postavke, unose ih u internetske obrasce i informacije za prijavljene korisnike.
                         </p>
                         <p class="cookies__paragraph">
-                                Kolačići mogu spremati širok pojas informacija, ali ta informacija ili informacije mogu biti spremljene jedino ako korisnik to omogući ‒ internetske stranice ne mogu dobiti pristup informacijama koji im korisnik nije dao i ne mogu pristupiti drugim datotekama na korisnikovu računalu. Vi možete promijeniti svoje postavke u vašem pretraživaču interneta te time sami odabrati hoćete li zahtjeve za spremanje kolačića odobriti ili odbiti, hoćete li spremljene kolačiće automatski pobrisati pri zatvaranju internetskoga preglednika.
+                            Kolačići mogu spremati širok pojas informacija, ali ta informacija ili informacije mogu biti spremljene jedino ako korisnik to omogući ‒ internetske stranice ne mogu dobiti pristup informacijama koji im korisnik nije dao i ne mogu pristupiti drugim datotekama na korisnikovu računalu. Vi možete promijeniti svoje postavke u vašem pretraživaču interneta te time sami odabrati hoćete li zahtjeve za spremanje kolačića odobriti ili odbiti, hoćete li spremljene kolačiće automatski pobrisati pri zatvaranju internetskoga preglednika.
                         </p>
                         <p class="cookies__paragraph">
-                                Kolačići nam omogućuju da mjerimo posjećenost i izvore prometa na našim web stranicama kako bi mogli poboljšati funkcionalnost i učinkovitost naših stranica. <br>
-
-                                Više informacija možete pronaći na ovim adresama <a href="www.allaboutcookies.org">www.allaboutcookies.org</a>  i <a href="www.youronlinechoices.eu">www.youronlinechoices.eu</a> 
-                                
+                            Kolačići nam omogućuju da mjerimo posjećenost i izvore prometa na našim web stranicama kako bi mogli poboljšati funkcionalnost i učinkovitost naših stranica. <br>
+                            
+                            Više informacija možete pronaći na ovim adresama <a href="www.allaboutcookies.org">www.allaboutcookies.org</a>  i <a href="www.youronlinechoices.eu">www.youronlinechoices.eu</a> 
+                            
                         </p>
                         <h3 class="cookies__subheading">KAKO ONEMOGUĆITI KOLAČIĆE?</h3>
                         <p class="cookies__paragraph">
-                                Isključivanjem kolačića odlučujete hoćete li dopustiti njihovo pohranjivanje na vašem računalu. Postavke s kolačićima mogu se kontrolirati i konfigurirati u vašem internetskom pregledniku. Za informacije o postavkama kolačića odaberite internetski preglednik kojim se koristite.
+                            Isključivanjem kolačića odlučujete hoćete li dopustiti njihovo pohranjivanje na vašem računalu. Postavke s kolačićima mogu se kontrolirati i konfigurirati u vašem internetskom pregledniku. Za informacije o postavkama kolačića odaberite internetski preglednik kojim se koristite.
                         </p>
                         <p class="cookies__paragraph">
-                                Blokiranjem kolačića i dalje možete pregledavati internetske stranice, no određene funkcionalnosti neće vam biti na raspolaganju na njima.
+                            Blokiranjem kolačića i dalje možete pregledavati internetske stranice, no određene funkcionalnosti neće vam biti na raspolaganju na njima.
                         </p>
                         <h3 class="cookies__subheading">ŠTO SU STALNI KOLAČIĆI</h3>
                         <p class="cookies__paragraph">
-                                Stalni ili spremljeni kolačići sačuvani su na disku (vašem računalu) te ondje ostaju i nakon zatvaranja internetskog preglednika. Pomoću njih pohranjuju se podaci kao što su ime za prijavu i lozinka pa se ne morate prijavljivati prilikom svakog posjeta određenom mjestu.
+                            Stalni ili spremljeni kolačići sačuvani su na disku (vašem računalu) te ondje ostaju i nakon zatvaranja internetskog preglednika. Pomoću njih pohranjuju se podaci kao što su ime za prijavu i lozinka pa se ne morate prijavljivati prilikom svakog posjeta određenom mjestu.
                         </p>
                         <h3 class="cookies__subheading">ŠTO SU PRIVREMENI KOLAČIĆI?</h3>
                         <p class="cookies__paragraph">
-                                Privremeni kolačići privremeno se pohranjuju na disku te se brišu nakon zatvaranja internetskog preglednika. Pomoću njih internetske stranice pohranjuju privremene podatke kao što su stavke u košarici za kupnju.
+                            Privremeni kolačići privremeno se pohranjuju na disku te se brišu nakon zatvaranja internetskog preglednika. Pomoću njih internetske stranice pohranjuju privremene podatke kao što su stavke u košarici za kupnju.
                         </p>
                         <h3 class="cookies__subheading">ŠTO SU KOLAČIĆI PRVE STRANE?</h3>
                         <p class="cookies__paragraph">
-                                "First party cookies" (kolačići prve strane) dolaze s web-mjesta koje korisnik pregledava i mogu biti trajni ili privremeni. Web-mjesta te kolačiće upotrebljavaju za spremanje informacija koje će ponovo upotrebljavati kada korisnik sljedeći put posjeti to mjesto.
+                            "First party cookies" (kolačići prve strane) dolaze s web-mjesta koje korisnik pregledava i mogu biti trajni ili privremeni. Web-mjesta te kolačiće upotrebljavaju za spremanje informacija koje će ponovo upotrebljavati kada korisnik sljedeći put posjeti to mjesto.
                         </p>
                         <h3 class="cookies__subheading">ŠTO SU KOLAČIĆI TREĆE STRANE?</h3>
                         <p class="cookies__paragraph">
-                                Kolačići treće strane potječu od drugih, partnerskih web-mjesta koja gledate. Treće strane mogu tako prikupljati podatke o korisnicima različitih web-mjesta i upotrebljavati ih u marketinške i analitičke svrhe.
+                            Kolačići treće strane potječu od drugih, partnerskih web-mjesta koja gledate. Treće strane mogu tako prikupljati podatke o korisnicima različitih web-mjesta i upotrebljavati ih u marketinške i analitičke svrhe.
                         </p>
                         <h3 class="cookies__subheading">KORISTI LI SE OVA STRANICA KOLAČIĆIMA?</h3>
                         <p class="cookies__paragraph">
-                                Da, ponajprije zato kako bi vam naše internetske stranice omogućile bolje korisničko iskustvo.
+                            Da, ponajprije zato kako bi vam naše internetske stranice omogućile bolje korisničko iskustvo.
                         </p>
                         <h3 class="cookies__subheading">KAKVIM SE KOLAČIĆIMA KORISTI OVA STRANICA I ZAŠTO?</h3>
                         <p class="cookies__paragraph">
-                                Koristimo se kolačićima prve strane i pomoću njih prikupljamo slijedeće:
-                                <ul>
-                                    <li>Podatak o korisničkoj sjednici</li>
-                                    <li>Koristite li mobilni uredjaj</li>
-                                    <li>Koristite li tablet</li>
-                                </ul>
-                                Ti podaci nam trebaju kako bismo vam pružili bolje korisničko iskustvo.
+                            Koristimo se kolačićima prve strane i pomoću njih prikupljamo slijedeće:
+                            <ul>
+                                <li>Podatak o korisničkoj sjednici</li>
+                                <li>Koristite li mobilni uredjaj</li>
+                                <li>Koristite li tablet</li>
+                            </ul>
+                            Ti podaci nam trebaju kako bismo vam pružili bolje korisničko iskustvo.
                         </p>
                         <h3 class="cookies__subheading">IMA LI NA INTERNETSKOJ STRANICI KOLAČIĆA TREĆE STRANE?</h3>
                         <p class="cookies__paragraph">
-                                Ima nekoliko vanjskih servisa koji korisniku spremaju ograničene kolačiće. Ove kolačiće nije postavila ova internetska stranica, ali neki služe za normalno funkcioniranje određenih mogućnosti koje korisnicima olakšavaju pristup sadržaju. Trenutačno omogućujemo društvene mreže (korisnici mogu deliti članke na društvenim mrežama).
+                            Ima nekoliko vanjskih servisa koji korisniku spremaju ograničene kolačiće. Ove kolačiće nije postavila ova internetska stranica, ali neki služe za normalno funkcioniranje određenih mogućnosti koje korisnicima olakšavaju pristup sadržaju. Trenutačno omogućujemo društvene mreže (korisnici mogu deliti članke na društvenim mrežama).
                         </p>
                         <h3 class="cookies__subheading">Dodatne informacije o isključivanju kolačića</h3>
                         <p class="cookies__paragraph">
-                                Trenutačno postoji nekoliko web stranica za isključivanje pohranjivanja kolačića za različite servise. Više se možete informirati na sljedećim linkovima:
-                                <br> <a href="http://www.allaboutcookies.org/">http://www.allaboutcookies.org/</a>
-                                <br> <a href="http://www.youronlinechoices.eu/">http://www.youronlinechoices.eu/</a>
-                                <br> <a href="http://www.networkadvertising.org/">http://www.networkadvertising.org/</a>                                
+                            Trenutačno postoji nekoliko web stranica za isključivanje pohranjivanja kolačića za različite servise. Više se možete informirati na sljedećim linkovima:
+                            <br> <a href="http://www.allaboutcookies.org/">http://www.allaboutcookies.org/</a>
+                            <br> <a href="http://www.youronlinechoices.eu/">http://www.youronlinechoices.eu/</a>
+                            <br> <a href="http://www.networkadvertising.org/">http://www.networkadvertising.org/</a>                                
                         </p>
-                </div>
-        </section>
-        
-        
-        <section class="section-book">
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="#" class="form" id="book-form">
-                                <h3 class="book__heading">Popunite upit za rezervaciju vozila</h3>
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Ime i prezime" id="name" required>
-                                    <label for="name" class="form__label">Ime i prezime</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="tel" class="form__input" placeholder="Kontakt telefon" id="phone" required>
-                                    <label for="phone" class="form__label">Kontakt telefon</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email adresa" id="email" required>
-                                    <label for="email" class="form__label">Email adresa</label>
-                                </div>
-                                <div class="form__group">
-                                    <select name="carlist" class="form__input" form="book-form" id="cars">
-                                        <option value="volvo">Opel Astra</option>
-                                        <option value="saab">Opel Astra karavan</option>
-                                        <option value="opel">Renault Clio</option>
-                                        <option value="audi">Ford Focus</option>
-                                        <option value="audi">Opel Vivaro</option>
-                                        <option value="audi">Volkswagen Up</option>
-                                    </select>
-                                    <label for="cars" class="form__label">Automobil</label>
-                                    <div class="form__group">
-                                        
-                                        <div class='form__input input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
-                                        <label class="form__label">Datum preuzimanja</label>
-                                    </div>
-                                    <div class="form__group center-text">
-                                        <button class="btn btn--white">Pošalji</button>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
                     </div>
-                </div>
-                <div class="col-1-of-2">
+                </section>
+                <!-- ###### BOOKING SECTION ###### -->
+                 <section class="section-book" id="section-contact">
+            <div class="row">
+                <!-- ###### CONTACT INFO ###### -->
+                <div class="col-1-of-1">
                     <div class="contact__info">
                         <h4 class="contact__info--heading">Kontakt info</h4> 
                         <ul class="contact__info--list"> 
@@ -231,6 +204,7 @@
             </div>
         </section>
     </main>
+    <!-- ###### FOOTER ###### -->
     <footer class="footer">
         <div class="footer__logo-box">
             <img class="footer__logo" src="img/logo-blue.png" alt="">
@@ -240,26 +214,43 @@
                 <div class="footer__navigation">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Početna</a>
+                            <a href="pdf/Uvjeti-najma.pdf" class="footer__link">Uvjeti najma</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Uvjeti najma</a>
+                            <a href="pdf/UVJETI-koristenja.pdf" class="footer__link">Uvjeti korištenja</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Uvjeti korištenja</a>
+                            <a href="pdf/usporedbe-sa-leasingom.pdf" class="footer__link">Usporedbe sa leasingom</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Usporedbe sa leasingom</a>
+                            <a href="#" class="footer__link">Izjava o zastiti osobnih podataka</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Ostale usluge</a>
+                            <a href="pdf/uvjeti-placanja.pdf" class="footer__link">Uvjeti placanja</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            
         </div>
     </footer>
-
-</body>
-</html>
+            <!-- NAV TRANSPARENT TO SOLID -->
+            <script>
+                $(document).ready(function() {
+                    // Transition effect for navbar 
+                    $(window).scroll(function() {
+                        // checks if window is scrolled more than 250px, adds/removes solid class
+                        if($(this).scrollTop() > 100) { 
+                            $('.nav-blue').addClass('nav-solid');
+                        } else {
+                            $('.nav-blue').removeClass('nav-solid');
+                        }
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
+        
+        
+        
+        
