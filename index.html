@@ -145,22 +145,22 @@
                 <div class="col-1-of-2">
                     <div class="book">
                         <div class="book__form">
-                            <form action="#" class="form" id="book-form">
+                            <form method="POST" action="send.php" class="form" id="book-form">
                                 <h3 class="book__heading">Popunite upit za rezervaciju vozila</h3>
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Ime i prezime" id="name" required>
+                                    <input name="name" type="text" class="form__input" placeholder="Ime i prezime" id="name" required />
                                     <label for="name" class="form__label">Ime i prezime</label>
                                 </div>
                                 <div class="form__group">
-                                    <input type="tel" class="form__input" placeholder="Kontakt telefon" id="phone" required>
+                                    <input name="tel" type="tel" class="form__input" placeholder="Kontakt telefon" id="phone" required />
                                     <label for="phone" class="form__label">Kontakt telefon</label>
                                 </div>
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email adresa" id="email" required>
+                                    <input name="email" type="email" class="form__input" placeholder="Email adresa" id="email" required />
                                     <label for="email" class="form__label">Email adresa</label>
                                 </div>
                                 <div class="form__group">
-                                    <select name="carlist" class="form__input" form="book-form" id="cars">
+                                    <select name="carlist" class="form__input" form="book-form" id="cars" required>
                                         <option value="volvo">Opel Astra</option>
                                         <option value="saab">Opel Astra karavan</option>
                                         <option value="opel">Renault Clio</option>
@@ -172,7 +172,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class='input-group date' id='datetimepicker1'>
-                                        <input type='text' class="form-control" />
+                                        <input name="datetime" type='text' class="form-control" required/>
                                         <span class="input-group-addon">
                                             <span class="glyphicon glyphicon-calendar"></span>
                                         </span>
@@ -181,7 +181,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class='input-group date' id='datetimepicker2'>
-                                        <input type='text' class="form-control" />
+                                        <input name="datetime2" type='text' class="form-control" />
                                         <span class="input-group-addon">
                                             <span class="glyphicon glyphicon-calendar"></span>
                                         </span>
@@ -506,6 +506,15 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-1-of-1">
+                <div class="footer__credit-cards">
+                    <img src="img/visa.png" alt="Visa" />
+                    <img src="img/mastercard.png" alt="Mastercard" />
+                    <img src="img/amex.png" alt="Amex" />
+                </div>
+            </div>
+        </div>
     </footer>
     <div class="popup" id="popup1">
         <div class="popup__content">
@@ -582,7 +591,9 @@
                             <td>130</td>
                         </tr>
                     </table>
-                    
+                    <p>
+                        *pdv je uracunat u cijenu
+                    </p>
                 </div>
             </div>
         </div>
@@ -662,7 +673,9 @@
                             <td>140</td>
                         </tr>
                     </table>
-                    
+                    <p>
+                        *pdv je uracunat u cijenu
+                    </p>
                 </div>
             </div>
         </div>
@@ -742,7 +755,9 @@
                             <td>160</td>
                         </tr>
                     </table>
-                    
+                    <p>
+                        *pdv je uracunat u cijenu
+                    </p>
                 </div>
             </div>
         </div>

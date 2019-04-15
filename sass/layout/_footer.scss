@@ -52,4 +52,10 @@
             transform: translateY(-2px) scale(1.1);
         }
     }
+    &__credit-cards{
+        margin-top: -4rem;
+        img{
+            height: 6rem;
+        }
+    }
 }
