@@ -46,11 +46,7 @@ if(!empty($_POST)) {
     } else {
         echo "Message has been sent";
     }
-
-    
 }
-
-
  ?>
 
  <form method="POST" action="send.php" class="form" id="book-form">

@@ -72,7 +72,7 @@
     <!-- ###### HEADER SECTION ###### -->
     <header class="header" id="section-header">
         <div class="header__logo-box">
-            <img src="img/logo-white.png" alt="Bluerent logo" class="header__logo">
+            <img src="img/logo-white.png" alt="Bluerent logo" class="header__logo" />
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
@@ -145,7 +145,7 @@
                 <div class="col-1-of-2">
                     <div class="book">
                         <div class="book__form">
-                            <form method="POST" action="send.php" class="form" id="book-form">
+                            <form method="POST" action="form-to-email.php" class="form" id="book-form">
                                 <h3 class="book__heading">Popunite upit za rezervaciju vozila</h3>
                                 <div class="form__group">
                                     <input name="name" type="text" class="form__input" placeholder="Ime i prezime" id="name" required />
@@ -161,12 +161,13 @@
                                 </div>
                                 <div class="form__group">
                                     <select name="carlist" class="form__input" form="book-form" id="cars" required>
-                                        <option value="volvo">Opel Astra</option>
-                                        <option value="saab">Opel Astra karavan</option>
-                                        <option value="opel">Renault Clio</option>
-                                        <option value="audi">Ford Focus</option>
-                                        <option value="audi">Opel Vivaro</option>
-                                        <option value="audi">Volkswagen Up</option>
+                                        <option value="">&nbsp;</option>
+                                        <option value="Opel-Astra">Opel Astra</option>
+                                        <option value="Opel-Astra-karavan">Opel Astra karavan</option>
+                                        <option value="Reanul-Clio">Renault Clio</option>
+                                        <option value="Ford-Focus">Ford Focus</option>
+                                        <option value="Opel-Vivaro">Opel Vivaro</option>
+                                        <option value="Vokswagen-Up">Volkswagen Up</option>
                                     </select>
                                     <label for="cars" class="form__label">Automobil</label>
                                 </div>
@@ -449,10 +450,10 @@
             </div>
             <div class="row">
                 <div class="col-1-of-1">
-                    <a class="car-prices" href="#popup1">Cjenik vrijedi od 01.10. do 31.05.</a><br>
-                    <a class="car-prices" href="#popup2">Cjenik vrijedi od 01.06. do 31.06.</a><br>
-                    <a class="car-prices" href="#popup3">Cjenik vrijedi od 01.07. do 31.08.</a><br>
-                    <a class="car-prices" href="#popup2">Cjenik vrijedi od 01.09. do 31.09.</a><br>
+                    <a class="car-prices" href="#popup1">Cjenik vrijedi od 01.10. do 31.05.</a><br />
+                    <a class="car-prices" href="#popup2">Cjenik vrijedi od 01.06. do 31.06.</a><br />
+                    <a class="car-prices" href="#popup3">Cjenik vrijedi od 01.07. do 31.08.</a><br />
+                    <a class="car-prices" href="#popup2">Cjenik vrijedi od 01.09. do 31.09.</a><br />
                 </div>
             </div>
         </section>
@@ -481,7 +482,7 @@
     <!-- ###### FOOTER ###### -->
     <footer class="footer">
         <div class="footer__logo-box">
-            <img class="footer__logo" src="img/logo-blue.png" alt="">
+            <img class="footer__logo" src="img/logo-blue.png" alt="blueRent logo" />
         </div>
         <div class="row">
             <div class="col-1-of-1">
@@ -519,7 +520,7 @@
     <div class="popup" id="popup1">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/logo-blue.png" alt="Tour photo" class="popup__img">
+                <img src="img/logo-blue.png" alt="Tour photo" class="popup__img" />
             </div>
             <div class="popup_right">
                 <a href="#section-cars" class="popup__close">&times;</a>
@@ -601,7 +602,7 @@
     <div class="popup" id="popup2">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/logo-blue.png" alt="Tour photo" class="popup__img">
+                <img src="img/logo-blue.png" alt="Tour photo" class="popup__img" />
             </div>
             <div class="popup_right">
                 <a href="#section-cars" class="popup__close">&times;</a>
@@ -683,7 +684,7 @@
     <div class="popup" id="popup3">
         <div class="popup__content">
             <div class="popup__left">
-                <img src="img/logo-blue.png" alt="Tour photo" class="popup__img">
+                <img src="img/logo-blue.png" alt="Tour photo" class="popup__img" />
             </div>
             <div class="popup_right">
                 <a href="#section-cars" class="popup__close">&times;</a>
